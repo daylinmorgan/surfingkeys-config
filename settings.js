@@ -1,4 +1,4 @@
-settings.lurkingPattern = /https:\/\/(mail\.google\.com|inbox\.google\.com).*/i;
+settings.lurkingPattern = /https:\/\/(mail|inbox|docs)\.google\.com.*/i;
 api.mapkey(";U", "#4Edit current URL with vim editor, and reload", function () {
   Front.showEditor(
     window.location.href,

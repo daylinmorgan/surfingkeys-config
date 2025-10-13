@@ -1,4 +1,5 @@
-settings.lurkingPattern = /https:\/\/((mail|inbox|docs)\.google\.com.*)|overleaf.com.*/i;
+settings.lurkingPattern =
+  /https:\/\/((mail|inbox|docs)\.google\.com.*)|overleaf.com.*/i;
 api.mapkey(";U", "#4Edit current URL with vim editor, and reload", function () {
   Front.showEditor(
     window.location.href,
@@ -19,3 +20,5 @@ const hintsCss = `
 `;
 api.Hints.style(hintsCss);
 api.Hints.style(hintsCss, "text");
+
+api.iunmap("<Ctrl-a>");
